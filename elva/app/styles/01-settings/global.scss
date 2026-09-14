@@ -1,0 +1,27 @@
+/*
+ * Global SCSS Variables
+ * Note: CSS custom properties (--color-primary, etc.) should be defined
+ * in the consuming theme's CSS, not here. This allows each theme to customize colors.
+ */
+
+// SCSS Variables (for use within SCSS files)
+$main-color: var(--color-primary);
+$infinte-color: var(--infinte-color);
+$main-text-color: var(--main-text-color);
+
+// Default CSS custom properties (can be overridden by consuming theme)
+:root {
+  --infinte-color: #D8A7B1;
+  --main-text-color: #4B1D3F;
+  --main-text-color-dark: #4B1D3F;
+  --color-text: #4B1D3F;
+  --bg-gray: #F5EFE8;
+  --color-grey: #F9F4EC;
+  --color-light-grey: #E8D9C1;
+  
+  /* font-size */
+  --font-sm: 0.8685714286rem;
+  
+  /* plugins */
+  --mm-ocd-width: calc(100% - 51px);
+}
