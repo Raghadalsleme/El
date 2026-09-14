@@ -10,6 +10,8 @@ import themeTranslations from 'virtual:twilight/theme-translations';
 import devSchema from 'virtual:twilight/schema';
 import '../styles/app.css';
 import { AnnouncementBar } from '../components/AnnouncementBar';
+import { BackToTop } from '../components/BackToTop';
+import { Hero } from '../components/Hero';
 
 
 // Dev-only: reads the theme's local twilight.json (settings + components),
@@ -77,7 +79,10 @@ function RootComponent() {
         <TwilightProvider translations={themeTranslations}>
           <DevStoreBasePathRedirect />
           <AnnouncementBar />
+          <Hero />
         <Outlet />
+        <BackToTop />
+
 
           
         </TwilightProvider>
